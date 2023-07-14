@@ -1,0 +1,66 @@
+.home-screen{
+    /* padding: 20px; */
+    width: 80%;
+    background-color: #e8effe;
+}
+
+header{
+    padding: 20px;
+    background-color: #2757dd;
+    color: white;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.home-subinfo2{
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    /* width: fit-content; */
+}
+
+.home-subinfo2::-webkit-scrollbar{
+    display: none;
+}
+
+.home-subinfo3{
+  
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr; 
+   
+
+}
+
+.home-subinfo4{
+    display: flex;
+}
+
+
+.sub-section1{
+    background-color: white;
+    padding: 18px;
+    margin: 10px 10px 10px 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+}
+
+.sub-section1 > div > label{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.sub-section1 > div > p{
+    font-size: 10px;
+}
+.sub-section1 > div > input[type="radio"]{
+ border-color: #2757dd;   
+}
+.sub-section1:hover{
+    border: 2px solid #2757dd;
+    border-radius: 0px;
+}

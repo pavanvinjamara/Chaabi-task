@@ -1,0 +1,59 @@
+.homecontainer-1{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    width: 50%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.homecontainer-1:hover{
+    border: 2px solid #2757dd;
+    border-radius: 0px;
+}
+
+.para{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.sub-info1{
+    padding: 10px;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 0.6fr 0.3fr;
+    grid-template-columns: 0.2fr 0.2fr;
+    justify-content: center;
+}
+.sub-info1 > h1{
+    display: flex;
+}
+.sub-info2{
+    grid-row: 2;
+    grid-column: 2;
+    width: max-content;
+  
+}
+
+.div-subinfo{
+ background-color: #e9f4ed;
+ color: #69ab7b;
+ margin-right: 10px;
+ border-radius: 10px;
+ padding: 10px;
+ width: 90px;
+
+    grid-column: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.para2{
+    display: flex;
+    align-items: center;
+}
+
