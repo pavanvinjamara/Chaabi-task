@@ -30,14 +30,14 @@ function HomeContainer1({name}) {
       { mass: 1, tension: 210, friction: 180 },
     ]}
   ></AnimatedNumbers>{name.percent}</h1>
-            <div className='div-subinfo'>
+            <div className='div-subinfo' style={{backgroundColor: name.colorsbk, color: name.colors}}>
               <FontAwesomeIcon icon={faSquareArrowUpRight}/>
                 <p>20%</p>
                 
             </div>
             <p className='para2'>{name.numberTwo}</p>
         </div>
-        <div className="sub-info2"><Area className="area" /></div>
+        <div className="sub-info2"><Area className="area" color={name.colors} backgroundColor={name.colorsbk}/></div>
         
         
     </div>

@@ -24,6 +24,9 @@ ChartJS.register(
   Legend
 );
 
+
+function Area({color, backgroundColor}) {
+  
 const options = {
   responsive: true,
   plugins: {
@@ -61,20 +64,18 @@ const options = {
 
 const labels = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
-export const data = {
+const data = {
   labels,
   datasets: [
     {
       fill: true,
-      label: 'Dataset 2',
+      label: 'Data',
       data: [0, 36, 19, 19, 50, 35, 0],
-      borderColor: 'rgb(53, 162, 235)',
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
+      borderColor: color,
+      backgroundColor: backgroundColor,
     },
   ],
 };
-
-function Area() {
   return <Line options={options} data={data} width={150} />;
 }
 
